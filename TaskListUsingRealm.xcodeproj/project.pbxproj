@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		C1B4D0CE292CF25800643068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0CD292CF25800643068 /* AppDelegate.swift */; };
 		C1B4D0D0292CF25800643068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0CF292CF25800643068 /* SceneDelegate.swift */; };
-		C1B4D0D2292CF25800643068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0D1292CF25800643068 /* ViewController.swift */; };
+		C1B4D0D2292CF25800643068 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0D1292CF25800643068 /* TaskListViewController.swift */; };
 		C1B4D0D5292CF25800643068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B4D0D3292CF25800643068 /* Main.storyboard */; };
 		C1B4D0D7292CF25E00643068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B4D0D6292CF25E00643068 /* Assets.xcassets */; };
 		C1B4D0DA292CF25E00643068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B4D0D8292CF25E00643068 /* LaunchScreen.storyboard */; };
+		C1B4D0E6292CF4AB00643068 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C1B4D0E5292CF4AB00643068 /* Realm */; };
+		C1B4D0E8292CF4AB00643068 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C1B4D0E7292CF4AB00643068 /* RealmSwift */; };
+		C1B4D0EA292D0D0D00643068 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0E9292D0D0D00643068 /* TasksViewController.swift */; };
+		C1B4D0EC292D0D8E00643068 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0EB292D0D8E00643068 /* AlertController.swift */; };
+		C1B4D0EF292D0E5E00643068 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0EE292D0E5E00643068 /* TaskList.swift */; };
+		C1B4D0F2292D0EB500643068 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0F1292D0EB500643068 /* DataManager.swift */; };
+		C1B4D0F4292D0EE000643068 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4D0F3292D0EE000643068 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1B4D0CA292CF25800643068 /* TaskListUsingRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskListUsingRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B4D0CD292CF25800643068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B4D0CF292CF25800643068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1B4D0D1292CF25800643068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1B4D0D1292CF25800643068 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		C1B4D0D4292CF25800643068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1B4D0D6292CF25E00643068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B4D0D9292CF25E00643068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B4D0DB292CF25E00643068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B4D0E9292D0D0D00643068 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C1B4D0EB292D0D8E00643068 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		C1B4D0EE292D0E5E00643068 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		C1B4D0F1292D0EB500643068 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C1B4D0F3292D0EE000643068 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B4D0E8292CF4AB00643068 /* RealmSwift in Frameworks */,
+				C1B4D0E6292CF4AB00643068 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,68 @@
 		C1B4D0CC292CF25800643068 /* TaskListUsingRealm */ = {
 			isa = PBXGroup;
 			children = (
-				C1B4D0CD292CF25800643068 /* AppDelegate.swift */,
-				C1B4D0CF292CF25800643068 /* SceneDelegate.swift */,
-				C1B4D0D1292CF25800643068 /* ViewController.swift */,
-				C1B4D0D3292CF25800643068 /* Main.storyboard */,
-				C1B4D0D6292CF25E00643068 /* Assets.xcassets */,
-				C1B4D0D8292CF25E00643068 /* LaunchScreen.storyboard */,
-				C1B4D0DB292CF25E00643068 /* Info.plist */,
+				C1B4D0F5292D0F0600643068 /* Services */,
+				C1B4D0E2292CF2ED00643068 /* App */,
+				C1B4D0F0292D0E7100643068 /* Model */,
+				C1B4D0ED292D0E2B00643068 /* ViewControllers */,
+				C1B4D0E1292CF27500643068 /* StoryBoards */,
+				C1B4D0E3292CF32D00643068 /* Resources */,
 			);
 			path = TaskListUsingRealm;
+			sourceTree = "<group>";
+		};
+		C1B4D0E1292CF27500643068 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0D3292CF25800643068 /* Main.storyboard */,
+				C1B4D0D8292CF25E00643068 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C1B4D0E2292CF2ED00643068 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0CD292CF25800643068 /* AppDelegate.swift */,
+				C1B4D0CF292CF25800643068 /* SceneDelegate.swift */,
+				C1B4D0DB292CF25E00643068 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C1B4D0E3292CF32D00643068 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0D6292CF25E00643068 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1B4D0ED292D0E2B00643068 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0D1292CF25800643068 /* TaskListViewController.swift */,
+				C1B4D0E9292D0D0D00643068 /* TasksViewController.swift */,
+				C1B4D0EB292D0D8E00643068 /* AlertController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C1B4D0F0292D0E7100643068 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0EE292D0E5E00643068 /* TaskList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1B4D0F5292D0F0600643068 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4D0F1292D0EB500643068 /* DataManager.swift */,
+				C1B4D0F3292D0EE000643068 /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +150,10 @@
 			dependencies = (
 			);
 			name = TaskListUsingRealm;
+			packageProductDependencies = (
+				C1B4D0E5292CF4AB00643068 /* Realm */,
+				C1B4D0E7292CF4AB00643068 /* RealmSwift */,
+			);
 			productName = TaskListUsingRealm;
 			productReference = C1B4D0CA292CF25800643068 /* TaskListUsingRealm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = C1B4D0C1292CF25800643068;
+			packageReferences = (
+				C1B4D0E4292CF4AB00643068 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C1B4D0CB292CF25800643068 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1B4D0D2292CF25800643068 /* ViewController.swift in Sources */,
+				C1B4D0EF292D0E5E00643068 /* TaskList.swift in Sources */,
+				C1B4D0D2292CF25800643068 /* TaskListViewController.swift in Sources */,
+				C1B4D0EC292D0D8E00643068 /* AlertController.swift in Sources */,
+				C1B4D0F2292D0EB500643068 /* DataManager.swift in Sources */,
+				C1B4D0EA292D0D0D00643068 /* TasksViewController.swift in Sources */,
 				C1B4D0CE292CF25800643068 /* AppDelegate.swift in Sources */,
 				C1B4D0D0292CF25800643068 /* SceneDelegate.swift in Sources */,
+				C1B4D0F4292D0EE000643068 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +368,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YD2Y3M8V2Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListUsingRealm/Info.plist;
+				INFOPLIST_FILE = TaskListUsingRealm/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +381,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bikteev.TaskListUsingRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +399,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YD2Y3M8V2Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListUsingRealm/Info.plist;
+				INFOPLIST_FILE = TaskListUsingRealm/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +412,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bikteev.TaskListUsingRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +443,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1B4D0E4292CF4AB00643068 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1B4D0E5292CF4AB00643068 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1B4D0E4292CF4AB00643068 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C1B4D0E7292CF4AB00643068 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1B4D0E4292CF4AB00643068 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1B4D0C2292CF25800643068 /* Project object */;
 }
