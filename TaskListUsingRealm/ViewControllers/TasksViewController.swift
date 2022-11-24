@@ -101,9 +101,7 @@ class TasksViewController: UITableViewController {
 extension TasksViewController {
     private func showAlert(with task: Task? = nil, completion: (() -> Void)? = nil) {
         let title = task != nil ? "Edit Task" : "New Task"
-        
         let alert = UIAlertController.createAlert(withTitle: title, andMessage: "What do you want to do?")
-        
         alert.action(with: task) { [weak self] taskTitle, note in
             if let _ = task, let _ = completion {
             } else {

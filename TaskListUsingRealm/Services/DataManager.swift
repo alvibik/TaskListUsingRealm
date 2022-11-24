@@ -22,18 +22,18 @@ class DataManager {
                     "Movies List",
                     Date(),
                     [
-                        ["Best film ever"],
-                        ["The best of the best", "Must have", Date(), true]
+                        ["Avatar"],
+                        ["", "Must have", Date(), true]
                     ]
                 ]
             )
             
             let milk = Task()
             milk.name = "Milk"
-            milk.note = "2L"
+            milk.note = "2 L"
             
             let bread = Task(value: ["Bread", "", Date(), true])
-            let apples = Task(value: ["name": "Apples", "note": "2Kg"])
+            let apples = Task(value: ["name": "Apples", "note": "2 kg"])
             
             shoppingList.tasks.append(milk)
             shoppingList.tasks.insert(contentsOf: [bread, apples], at: 1)

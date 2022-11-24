@@ -8,9 +8,13 @@
 import UIKit
 import RealmSwift
 
-class TaskListViewController: UITableViewController {
+final class TaskListViewController: UITableViewController {
+    
+    //MARK: - Published properties
 
     var taskLists: Results<TaskList>!
+    
+    //MARK: - Overridet methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,6 @@ class TaskListViewController: UITableViewController {
             target: self,
             action: #selector(addButtonPressed)
         )
-        
         navigationItem.rightBarButtonItem = addButton
         navigationItem.leftBarButtonItem = editButtonItem
         createTempData()
@@ -41,7 +44,17 @@ class TaskListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         let taskList = taskLists[indexPath.row]
         content.text = taskList.name
-        content.secondaryText = "\(taskList.tasks.count)"
+//        content.secondaryText = "\(taskList.tasks.count)"
+        content.secondaryText = "✔︎\(taskList.tasks.filter("isComplete = true").count)  ❏\(taskList.tasks.filter("isComplete = false").count)"
+//        content.secondaryText = {() -> String in
+//            let secondTextIsNonCom = taskList.tasks.filter("isComplete = false")
+//            let secondTextIsCom = taskList.tasks.filter("isComplete = false")
+//            if taskList.tasks.isEmpty {
+//                //se
+//            }
+//            return "-"
+//        }()
+
         cell.contentConfiguration = content
         return cell
     }
@@ -81,7 +94,8 @@ class TaskListViewController: UITableViewController {
         let taskList = taskLists[indexPath.row]
         tasksVC.taskList = taskList
     }
-
+    
+    //MARK: - IBAcations
     @IBAction func sortingList(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 1:
@@ -92,6 +106,7 @@ class TaskListViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    //MARK: - Private methods
     @objc private func addButtonPressed() {
         showAlert()
     }
@@ -101,8 +116,16 @@ class TaskListViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+//    private func secondTextConfig() -> String{
+//        let currentTasks = taskList.tasks.filter("isComplete = false")
+//        var secondText = "-"
+//        if taskLists.task.isEmpty {
+//            secondText = "0"
+//        }
+//        return secondText
+//    }
 }
-
+    //MARK: - Extensions
 extension TaskListViewController {
     
     private func showAlert(with taskList: TaskList? = nil, completion: (() -> Void)? = nil) {
